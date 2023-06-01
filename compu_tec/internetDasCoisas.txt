@@ -1,0 +1,110 @@
+
+apresentacao 1 DEFESA
+
+	__INTERNET DAS COISAS E SUA NECESSIDADE
+	por que tão importante?
+
+	inicio 1999
+	identificação por radiofrequencia
+	
+	utilização: depende da necessidade de quem precisa
+
+	(áreas e exemplos)
+
+apresentacao 1 ATAQUE
+	
+	O QUE É
+	rede de conexão entre qualquer coisa (dispositivo)
+	comunicação com internet
+
+	circulação de dados perigosa: segurança, privacidade...
+
+	brechas: acesso não permitidos a código de acesso; acesso e controle; bloqueio de acesso e controle exigindo resgate.
+
+	(exemplos de transgressão à segurança)
+
+	dependencia da comodidade: substitui atividades humanas necessárias..
+	exemplos: substitui esforço físico, dita o que vamos comer...
+
+	ameaça aos trabalhadores (substituição)
+	exemplos: pedágios, agro, estoque, linha de produção, interação com cliente...
+
+	alto custo
+
+perguntas
+
+	pergunta professor DEFESA
+		relação a diversos protocolos
+
+	resposta: IEEE / outras formas de negar acesso(exemplo: padrões de senha) / concientização das pessoas de que o problema existe
+
+	pergunta professor ATAQUE
+		como saber que não é inevitável a exploração do IoT
+
+	resposta: certas coisas não podem ser mudadas(se algo parar aquilo tem que ser concertado, e para isso é necessário a ação humana) / estamos em processo de evolução(empresas já contratam muitos projetos)
+
+	rebote
+		---
+
+	pergunta de defesa ao ataque
+		necessidade das pessoas em relação as funções do IoT
+
+	resposta: já existem esses auxílios sem as IoT mesmo que em menor escala
+
+	pergunta de ataque a defesa
+		?
+
+	resposta: LGPD - as empresas podem fazer o bom uso dos nossos dados / os problemas são mas relacionados a fiscalização do que a IoT / a conscientização seria uma solução
+	
+	rebote
+		o que aconteceria se os dados fossem atacados e vazados? como garantir que não sejam vazados ou não usados de forma indevida?
+	
+	resposta: concientizar e cobrar fiscalização
+
+	pergunta de defesa ao ataque 2
+		como avançar sem a utilização do IoT?
+
+	resposta: ---
+
+	rebote
+		celulares, tv... inicialmente eram para uma população exclusiva, mas se tornou muito comum para a maioria população hoje em dia
+
+	resposta: mesmo gradativo, a opinião das pessoas que utilizam o IoT hoje em dia pode alterar se as outras pessoas utilizarão futuramente
+
+	pergunta de ataque a defesa
+		em relação à falha médica
+
+	resposta: 
+		vão auxiliar, mas não envolvendo algo crucial, ou seja, o médico pode se virar sem a máquina
+
+	rebote
+		por exemplo em caso de cirurgias que não permitem falhas(para o caro de desabilitar a máquina e continuar a conduta de um médico)
+
+	resposta: existe uma equipe ciente do que pode ocorrer antes de entrar em cirurgia
+
+	pergunta plateia para DEFESA 1
+		problemas ambientais(solo; trabalho escravo)
+
+	resposta: missões de reciclagem / esse problema não é só da IoT
+
+	pergunta plateia para ATAQUE 1
+		---
+
+	resposta: não é para não acontecer, é para se dar o tempo (produzir mais/ eficiencia)
+
+	pergunta plateia para DEFESA 2
+		adaptação de pessoas mais velhas
+
+	resposta: assistencia por voz por exemplo / auxilio para lembrar das coisas / amazon go
+
+	pergunta plateia para ATAQUE 2
+		nosso cotidiano e o meio industrial
+
+	resposta: a inteligencia não saber retornar exatamente o que o usuário pede pode ser uma desvantagem
+	
+CONCUSÃO
+	defesa
+		trazem diversos benefícios / aumenta a segurança
+
+	ataque
+		inevitável a evolução / precisamos de tempo; evitar impactos ruins na sociedade
