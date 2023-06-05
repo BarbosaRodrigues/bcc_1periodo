@@ -74,6 +74,42 @@ def imprimir_aleatoriamente(n:int, min: int, max:int):
         print(random.randint(min, max), end="  ")
     print()
 
+#______________________________________________________
+def imprimir_caixa(height:int, width:int, fill:str, edge:str):
+    print()
+    print(edge, end="")
+    c=0
+    for i in range(1, height+1):
+        for j in range(1, width+1):
+            if i==1:
+                while c< width-2:
+                    print(" -", end="")
+                    c+=1
+                    if c==width-2:
+                        print(edge)
+            else:
+                print("|", end="")
+                c2=0
+                while c2< width-2:
+                    print(fill, end="")
+                    c2+=1
+                if c2==width-2:
+                    print("|")
+    if i==height:
+        c=0
+        print(edge, end="")
+
+        while c< width-2:
+            print(" -", end="")
+            c+=1
+        if c==width-2:
+            print(edge)
+    print()
+
+            
+
+            
+            
 
 def main():
     #somar(5)                           #   >>>questao_1
@@ -82,4 +118,5 @@ def main():
     #verificar2(7)                      #   >>>questao_4
     #somar_fatoriais(4)                 #   >>>questao_5/questao_6
     imprimir_aleatoriamente(10, 74, 80) #   >>>questao_7
+    imprimir_caixa(4, 6, " #", "o")
 main()
