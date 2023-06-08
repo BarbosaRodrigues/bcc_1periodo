@@ -30,14 +30,11 @@ def somar_multiplicar(a: int, b: int):
 
 #______________________________________________________
 def verificar(n: int):
-    divisao=1
-    confere=0
-    while divisao<n:
-        resto=n%divisao
+    for i in range(n+1):
+        resto=n%i
         if resto==0:
-            confere+=1
-        divisao+=1
-    if n==2 or n==3 or confere<2:
+            divisiveis+=1
+    if n==2 or n==3 or divisiveis<=2:
         return True
     else:
         return False
@@ -75,48 +72,47 @@ def imprimir_aleatoriamente(n:int, min: int, max:int):
     print()
 
 #______________________________________________________
+def imprimir_linha(n: int, fill:str, edge:str):
+    print(edge, end="")
+    for i in range(n-2):
+        print(fill, end="")
+    print(edge)
+
+#______________________________________________________
 def imprimir_caixa(height:int, width:int, fill:str, edge:str):
     print()
-    print(edge, end="")
-    c=0
-    for i in range(1, height+1):
-        for j in range(1, width+1):
-            if i==1:
-                while c< width-2:
-                    print(" -", end="")
-                    c+=1
-                    if c==width-2:
-                        print(edge)
-            else:
-                print("|", end="")
-                c2=0
-                while c2< width-2:
-                    print(fill, end="")
-                    c2+=1
-                if c2==width-2:
-                    print("|")
-    if i==height:
-        c=0
-        print(edge, end="")
+    imprimir_linha(width, fill, edge)
+    for i in range(height-2):
+        imprimir_linha(width, "   ", "|")
+    imprimir_linha(width, fill, edge)
 
-        while c< width-2:
-            print(" -", end="")
-            c+=1
-        if c==width-2:
-            print(edge)
-    print()
+#______________________________________________________
+def imprimir_maior_menor(n: int, left: int, right: int):
+    maior= left
+    menor= right
 
-            
-
-            
-            
+    for i in range(n+1):
+        sorteio = random.randint(left, right)
+        if sorteio>maior:
+            maior=sorteio
+        elif sorteio<menor:
+            menor=sorteio
+    if maior==menor:
+        print("os numeros precisam ser diferentes")
+    else:
+        print(f"min: {menor}, max: {maior}")
+        
+#______________________________________________________
 
 def main():
     #somar(5)                           #   >>>questao_1
     #somar_multiplicar(3, 4)            #   >>>questao_2
-    #print(verificar(18))               #   >>>questao_3
+    verificar(123)                      #   >>>questao_3
     #verificar2(7)                      #   >>>questao_4
     #somar_fatoriais(4)                 #   >>>questao_5/questao_6
-    imprimir_aleatoriamente(10, 74, 80) #   >>>questao_7
-    imprimir_caixa(4, 6, " #", "o")
+    #imprimir_aleatoriamente(10, 74, 80)#   >>>questao_7
+    #imprimir_linha(5, "=", "o")        #   >>>questao_8
+    #imprimir_caixa(10, 12, " = ", "o") #   >>>questao_9
+    #imprimir_maior_menor(100, -500, -32)   #   >>>questao_10
+    #imprimir_pares_primmos(8, 10, 30)
 main()
