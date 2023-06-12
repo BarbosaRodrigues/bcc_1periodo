@@ -28,10 +28,40 @@ def calcular_media(vet:list):
     media=total/len(vet)
     print("\nMEDIA: ", media)
 
+def buscar_elem(vet:list, elem):
+    j=0
+    for i in range(len(vet)):
+        if vet[i]==elem:
+            print("\n",elem, "na posicao: ", i)
+            j+=1
+    if j==0:
+        return None
+
+def buscar_crescente(vet:list, elem):
+    j=0
+    for i in range(len(vet)):
+        if vet[i]==elem:
+            print("\n",elem, "na posicao: ", i)
+            j+=1
+            break
+    if j==0:
+        return None
+    
+def achar_multiplo(vet:list, value):
+    print("\nMULTIPLOS DE", value, ":")
+    for i in range(len(vet)):
+        if vet[i]%value==0:
+            print(vet[i])
+
+
+        
 
 def main():
     inverter_lista([3,1,10,40])
     imprimir_pares([3,1,10,40])
     inverter_polaridade([3, -23, -4, 10, -9])
     calcular_media([9, 10, 8.5, 7.7])
+    buscar_elem(["joao", 34, 9999, "m", "a", "h"], "m")
+    buscar_crescente(["joao", 34, 9999, "m", "a", "h"], "h")
+    achar_multiplo([20, 23, 45, 60, 88, 168, 169], 3)
 main()
