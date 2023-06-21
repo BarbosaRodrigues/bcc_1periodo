@@ -53,8 +53,20 @@ def achar_multiplo(vet:list, value):
         if vet[i]%value==0:
             print(vet[i])
 
-
-        
+def lista_com_primos(vet:list):
+    print("\nPrimos da lista:\n")
+    primos=vet
+    for i in range(len(vet)):
+        for j in range(1, vet[i]):
+            div=0
+            if vet[i]%j==0:
+                div+=1
+        if div>1:
+            primos.pop(i)
+        div=0
+    print(primos) 
+            
+  
 
 def main():
     inverter_lista([3,1,10,40])
@@ -64,4 +76,5 @@ def main():
     buscar_elem(["joao", 34, 9999, "m", "a", "h"], "m")
     buscar_crescente(["joao", 34, 9999, "m", "a", "h"], "h")
     achar_multiplo([20, 23, 45, 60, 88, 168, 169], 3)
+    lista_com_primos([2,3,4,5])
 main()
