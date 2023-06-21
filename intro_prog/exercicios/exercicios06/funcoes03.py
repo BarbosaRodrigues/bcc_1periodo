@@ -1,3 +1,16 @@
+def verificar(n):
+    i=n
+    divisiveis=0
+    while i > 1:
+        resto=n%i
+        if resto==0:
+            divisiveis+=1
+        i-=1
+    if n==1 or n==2 or divisiveis==1:
+        return True
+    else:
+        return False
+
 def inverter_lista(vet:list):
     max= len(vet)-1
     inverte=[]
@@ -53,21 +66,28 @@ def achar_multiplo(vet:list, value):
         if vet[i]%value==0:
             print(vet[i])
 
-def lista_com_primos(vet:list):
+def listar_com_primos(vet:list):
     print("\nPrimos da lista:\n")
-    primos=vet
+    primos=[]
+    a=1
+
     for i in range(len(vet)):
-        for j in range(1, vet[i]):
-            div=0
-            if vet[i]%j==0:
-                div+=1
-        if div>1:
-            primos.pop(i)
-        div=0
+        verificar(vet[i])
+        if verificar(vet[i])==True:
+            primos.append(vet[i])
+        
+
     print(primos) 
+
+def verificar_ordem(vet:list):
+    for i in range(1,len(vet)):
+        if vet[i]>vet[i-1]:
+            return True
+        else:
+            return False
+            break
             
   
-
 def main():
     inverter_lista([3,1,10,40])
     imprimir_pares([3,1,10,40])
@@ -76,5 +96,6 @@ def main():
     buscar_elem(["joao", 34, 9999, "m", "a", "h"], "m")
     buscar_crescente(["joao", 34, 9999, "m", "a", "h"], "h")
     achar_multiplo([20, 23, 45, 60, 88, 168, 169], 3)
-    lista_com_primos([2,3,4,5])
+    listar_com_primos([2,3,4,5, 10, 13])
+    print(verificar_ordem([2, 3 , 10, 4, 1,6,7]))
 main()
